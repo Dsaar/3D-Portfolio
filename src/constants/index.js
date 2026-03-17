@@ -23,6 +23,20 @@ import {
 	jobit,
 	tripguide,
 	threejs,
+	ecotrack,
+	wandernotes,
+	hangman,
+	frogger,
+	tictactoe,
+	memory,
+	pacman,
+	snake,
+	samurai,
+	todo,
+	present,
+	herenow,
+	coffee,
+	followlead
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +45,8 @@ export const navLinks = [
 		title: "About",
 	},
 	{
-		id: "work",
-		title: "Work",
+		id: "projects",
+		title: "Projects",
 	},
 	{
 		id: "contact",
@@ -54,7 +68,7 @@ const services = [
 		icon: backend,
 	},
 	{
-		title: "Content Creator",
+		title: "3D Web Developer",
 		icon: creator,
 	},
 ];
@@ -198,9 +212,9 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "EcoTrack",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"EcoTrack is a full-stack sustainability and community engagement platform designed to encourage environmentally positive actions through mission-based gamification, impact tracking, and real-time user interaction.",
 		tags: [
 			{
 				name: "react",
@@ -211,33 +225,33 @@ const projects = [
 				color: "green-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "nodejs",
 				color: "pink-text-gradient",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: ecotrack,
+		source_code_link: "https://github.com/Dsaar/ecotrack.git",
 	},
 	{
-		name: "Job IT",
+		name: "Wander Notes",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"Wander Notes is a full-stack travel blog and diary platform designed to let users document journeys, discover travel stories, and interact with content through article publishing, tag-based exploration, commenting, and user-focused features.",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "restapi",
+				name: "DjangoRestFramework",
 				color: "green-text-gradient",
 			},
 			{
-				name: "scss",
+				name: "python",
 				color: "pink-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image: wandernotes,
+		source_code_link: "https://github.com/Dsaar/django-project.git",
 	},
 	{
 		name: "Trip Guide",
@@ -262,4 +276,264 @@ const projects = [
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const games = [
+	{
+		name: "Hangman",
+		description:
+			"The Hangman game is built using HTML5, CSS3, and JavaScript (ES6+), showcasing essential front-end skills such as DOM manipulation, event handling, and responsive design. The game dynamically generates words, tracks user guesses through keyboard input, and provides visual feedback for correct and incorrect letters.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: hangman,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "Frogger",
+		description:
+			"The Frogger-style game is built using HTML5, CSS3, and JavaScript (ES6+), showcasing front-end concepts such as animation, collision detection, and responsive design. The game uses object-oriented programming to handle player movement, obstacles, and game logic. All artwork and sprites are sourced from itch.io.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: frogger,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "Tic-Tac-Toe",
+		description:
+			"The Tic Tac Toe game is built using HTML5, CSS3, and JavaScript (ES6+), highlighting front-end skills such as DOM manipulation, event handling, and responsive layout. The game offers two modes: player vs. player and player vs. computer, with logic to detect wins or draws and provide instant visual feedback.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: tictactoe,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "Memory-Game",
+		description:
+			"The memory card-matching game is built using HTML5, CSS3, and JavaScript (ES6+), showcasing front-end concepts such as animations, event handling, and responsive design. The game uses object-oriented programming to manage card states, match logic, and game flow. All artwork and card images were generated using AI tools.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: memory,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "Pac-Man",
+		description:
+			"The Pac-Man-style game is built using HTML5, CSS3, and JavaScript (ES6+), showcasing front-end concepts such as animations, and collision detection. The game uses object-oriented programming to handle player movement, enemy behavior, and game mechanics. All artwork and sprites are sourced from itch.io.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: pacman,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "Snake",
+		description:
+			"The Snake game is built using HTML5, CSS3, and JavaScript (ES6+), showcasing front-end concepts such as animations, keyboard input handling, and responsive design. The game uses object-oriented programming to manage the snake’s movement, growth, collision logic, and food generation. The artwork was generated using AI tools.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: snake,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "Samurai-Fight",
+		description:
+			"The Samurai-Fight game project is built using HTML5, CSS3, and JavaScript (ES6+), showcasing key front-end concepts such as animation, DOM manipulation, and responsive design. The game features object-oriented game logic, real-time and combat mechanics. All artwork and sprites are sourced from itch.io.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: samurai,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "To-Do-List",
+		description:
+			"This to-do list app is built using HTML5, CSS3, and JavaScript (ES6+), showcasing front-end concepts such as dynamic DOM manipulation, event handling, and responsive design. The app uses object-oriented programming to manage task creation, completion, deletion, and filtering. It also supports localStorage for data persistence across sessions.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: todo,
+		source_code_link: "https://github.com/",
+	},
+	{
+		name: "Catch the Presents",
+		description:
+			"Catch the Presents is a retro-style browser game built using HTML5, CSS3, and JavaScript (ES6+), showcasing front-end concepts such as animation, event handling, and responsive design. The game uses object-oriented programming to manage falling presents, collision detection, and tracking high-scores with localStorage.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: present,
+		source_code_link: "https://github.com/",
+	},
+]
+
+const landingPages = [
+	{
+		name: "Here & Now",
+		description:
+			"EcoTrack is a full-stack sustainability and community engagement platform designed to encourage environmentally positive actions through mission-based gamification, impact tracking, and real-time user interaction.",
+		tags: [
+			{
+				name: "react",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "mongodb",
+				color: "green-text-gradient",
+			},
+			{
+				name: "nodejs",
+				color: "pink-text-gradient",
+			},
+		],
+		image: herenow,
+		source_code_link: "https://github.com/Dsaar/ecotrack.git",
+	},
+	{
+		name: "Coffee",
+		description:
+			"Wander Notes is a full-stack travel blog and diary platform designed to let users document journeys, discover travel stories, and interact with content through article publishing, tag-based exploration, commenting, and user-focused features.",
+		tags: [
+			{
+				name: "react",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "DjangoRestFramework",
+				color: "green-text-gradient",
+			},
+			{
+				name: "python",
+				color: "pink-text-gradient",
+			},
+		],
+		image: coffee,
+		source_code_link: "https://github.com/Dsaar/django-project.git",
+	},
+	{
+		name: "Follow Our Lead",
+		description:
+			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+		tags: [
+			{
+				name: "nextjs",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "css",
+				color: "pink-text-gradient",
+			},
+		],
+		image: followlead,
+		source_code_link: "https://github.com/",
+	},
+];
+
+
+
+export { services, technologies, experiences, testimonials, projects, games, landingPages };

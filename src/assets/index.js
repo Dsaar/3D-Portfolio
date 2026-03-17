@@ -30,6 +30,31 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import ecotrack from './Ecotrack.png';
+import wandernotes from './WanderNotes.png';
+
+import hangman from './hangman-game.png';
+import frogger from './frogger-game.png';
+import tictactoe from './tic-tac-toe-game.png';
+import memory from './memory-game.png';
+import pacman from './pac-man-game.png';
+import snake from './snake-game.png';
+import samurai from './samurai-fight-game.png';
+import todo from './to-do-list-app.png';
+import present from './basket-game.png';
+
+import herenow from './Here-Now.png';
+import coffee from './Coffe.png';
+import followlead from './Follow-my-Lead.png';
+import outsidebox from './Outsidethebox.png';
+import freeconsult from './Free-Consultation.png';
+import trailblazer from './Trailblazer.png';
+import discover from './Discover-the-World.png';
+
+
+
+
+
 export {
   logo,
   backend,
@@ -59,4 +84,22 @@ export {
   carrent,
   jobit,
   tripguide,
+  ecotrack,
+  wandernotes,
+  hangman,
+  frogger,
+  tictactoe,
+  memory,
+  pacman,
+  snake,
+  samurai,
+  todo,
+  present,
+  herenow,
+  coffee,
+  followlead,
+  outsidebox,
+  freeconsult,
+  trailblazer,
+  discover
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import {Tilt} from "react-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -8,22 +8,27 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt
+    className='xs:w-[250px] w-full'
+    options={{
+      max: 45,
+      scale: 1,
+      speed: 450,
+    }}
+  >
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.2, 0.6)}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: true, amount: 0.2 }}
+      whileHover={{ y: -8, scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
+      <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
         <img
           src={icon}
-          alt='web-development'
+          alt={title}
           className='w-16 h-16 object-contain'
         />
 
@@ -38,13 +43,21 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.2 }}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with experience in TypeScript and

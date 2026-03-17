@@ -8,6 +8,10 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Games from './Games';
+import Projects from './Projects';
+import ProjectsToggle from "./ProjectsToggle";
+
 
 
 export {
@@ -17,11 +21,14 @@ export {
   Tech,
   Experience,
   Works,
+  Games,
+  Projects,
   Feedbacks,
   Contact,
   CanvasLoader,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  ProjectsToggle,
 };

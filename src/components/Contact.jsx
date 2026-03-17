@@ -18,13 +18,11 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
+    const { name, value } = e.target;
+    setForm((prev) => ({
+      ...prev,
       [name]: value,
-    });
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -48,7 +46,6 @@ const Contact = () => {
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
           setForm({
             name: "",
             email: "",
@@ -58,17 +55,17 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className='xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden'>
       <motion.div
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.2 }}
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
@@ -91,6 +88,7 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
@@ -102,6 +100,7 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
@@ -124,6 +123,9 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.2 }}
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
